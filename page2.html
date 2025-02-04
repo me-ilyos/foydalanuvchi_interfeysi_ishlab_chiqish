@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRDWATCHING</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #33cc33;
+            color: #000;
+        }
+
+        header {
+            background-color: #33cc33;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: 'Times New Roman', serif;
+        }
+
+        .bird-icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        nav {
+            background-color: #33cc33;
+            padding: 10px 0;
+            border-top: 2px solid #666;
+            border-bottom: 2px solid #666;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .welcome-section {
+            flex: 2;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+        }
+
+        .photos-section {
+            flex: 1;
+        }
+
+        .photos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .photos-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', serif;
+            color: #000;
+        }
+
+        footer {
+            padding: 20px;
+            border-top: 2px solid #666;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .photos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">BIRDWATCHING</h1>
+        <img src="/api/placeholder/40/40" alt="Bird icon" class="bird-icon">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">GET STARTED</a></li>
+            <li><a href="#">PHOTOS</a></li>
+            <li><a href="#">GEAR</a></li>
+            <li><a href="#">FORUM</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="welcome-section">
+            <h2>WELCOME</h2>
+            <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
+            <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
+        </section>
+
+        <section class="photos-section">
+            <h2>FAVOURITE PHOTOS</h2>
+            <div class="photos-grid">
+                <img src="/api/placeholder/200/150" alt="Bird 1">
+                <img src="/api/placeholder/200/150" alt="Bird 2">
+                <img src="/api/placeholder/200/150" alt="Bird 3">
+                <img src="/api/placeholder/200/150" alt="Bird 4">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
+        <p><a href="#">Dove icon</a> by Lorc.</p>
+    </footer>
+</body>
+</html>
